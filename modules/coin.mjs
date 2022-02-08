@@ -39,6 +39,14 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  let flips = flips;
+  let i = 0;
+  var coin = ['heads', 'tails'];
+  while (i < flips) {
+    array_flips+= coin[Math.floor(Math.random()*coin.length)];;
+    i++;
+  }
+  return array_flips;
 
 }
 
@@ -80,3 +88,4 @@ function flipACoin(call) {
  * Export all of your named functions
 */
 export function coinFlip(){}
+export function coinFlips(){}
