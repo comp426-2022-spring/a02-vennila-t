@@ -39,7 +39,6 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  let flips = flips;
   let i = 0;
   const array_flips = [];
   var coin = ['heads', 'tails'];
@@ -109,7 +108,7 @@ function flipACoin(call) {
  *
  * Export all of your named functions
 */
-export function coinFlip(){}
-export function coinFlips(){}
-export function countFlips(){}
-export function flipACoin(){}
+export { coinFlip } from "./modules/coin.mjs";
+export { coinFlips } from "./modules/coin.mjs";
+export { countFlips } from "./modules/coin.mjs";
+export { flipACoin } from "./modules/coin.mjs";

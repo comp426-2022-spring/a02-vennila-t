@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "\"This is a simple package that emulates coin flips in several different ways.\"",
   "main": "flip.js",
+  "type": "module",
   "scripts": {
     "flip": "node flip.js",
 	  "flips": "node flips.js",
