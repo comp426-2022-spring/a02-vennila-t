@@ -111,5 +111,5 @@ function flipACoin(call) {
 */
 export function coinFlip(){}
 export function coinFlips(){}
-export function countflips(){}
+export function countFlips(){}
 export function flipACoin(){}
