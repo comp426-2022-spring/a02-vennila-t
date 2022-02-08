@@ -108,7 +108,7 @@ function flipACoin(call) {
  *
  * Export all of your named functions
 */
-export { coinFlip } from "./modules/coin.mjs";
-export { coinFlips } from "./modules/coin.mjs";
-export { countFlips } from "./modules/coin.mjs";
-export { flipACoin } from "./modules/coin.mjs";
+export function coinFlip(){};
+export function coinFlips(){};
+export function countFlips(){};
+export function flipACoin(){};
