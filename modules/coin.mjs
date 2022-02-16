@@ -15,7 +15,7 @@
  */
 
 function coinFlip() {
-  var coin = ['heads', 'tails'];
+  var coin = ["heads", "tails"];
   return coin[Math.floor(Math.random()*coin.length)];
 }
 
@@ -108,7 +108,4 @@ function flipACoin(call) {
  *
  * Export all of your named functions
 */
-export function coinFlip(){};
-export function coinFlips(){};
-export function countFlips(){};
-export function flipACoin(){};
+export { coinFlip, coinFlips, countFlips, flipACoin };
