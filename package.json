@@ -6,10 +6,13 @@
   "type": "module",
   "scripts": {
     "flip": "node flip.js",
-	  "flips": "node flips.js",
-	  "guess": "node guess-flip.js",
+    "flips": "node flips.js",
+    "guess": "node guess-flip.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vennila Thillaivanan",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }

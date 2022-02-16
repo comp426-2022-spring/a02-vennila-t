@@ -41,9 +41,8 @@ function coinFlip() {
 function coinFlips(flips) {
   let i = 0;
   const array_flips = [];
-  var coin = ['heads', 'tails'];
   while (i < flips) {
-    array_flips+= coin[Math.floor(Math.random()*coin.length)];
+    array_flips+= coinFlip();
     i++;
   }
   return array_flips;
