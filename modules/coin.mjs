@@ -39,14 +39,13 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  let i = 0;
-  const array_flips = [];
+  var i = 0;
+  var results = new Array();
   while (i < flips) {
-    array_flips+= coinFlip();
+    results[i] = coinFlip();
     i++;
   }
-  return array_flips;
-
+  return results;
 }
 
 /** Count multiple flips
@@ -63,18 +62,24 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  let heads = 0;
-  let tails = 0;
+  var heads = 0;
+  var tails = 0;
 
-  for(let i = 0; i < array.length; i++){
+  for(var i = 0; i < array.length; i++){
     if(array[i] == "heads"){
       heads++;
     }
-    if(array[i] == "tails"){
+    else if(array[i] == "tails"){
       tails++;
     }
   }
-  return "heads: "+heads+", tails:"+tails;
+  if(heads == 0){
+    return "{ tails: "+tails+" }";
+  }
+  else if(tails == 0){
+    return "{ heads: "+heads+" }";
+  }
+  return "{ heads: "+heads+", tails: "+tails+" }";
 }
 
 /** Flip a coin!
@@ -89,16 +94,14 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-  flip = coinFlip();
-  result = "";
-  call = prompt("Guess heads or tails: ");
+  var flip = coinFlip();
+  var result = "";
   if(call = flip){
     result = "win";
   }
   else{
     result = "lose";
   }
-
   return "call: "+call+", flip: "+flip+", result: "+result;
 }
 
