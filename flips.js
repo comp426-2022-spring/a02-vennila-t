@@ -12,8 +12,8 @@ const args = require('yargs').argv;
 
 if(args.length == 0){
     console.log(coinFlips(1));
+
 }
 else{
     console.log(coinFlips(args.number));
 }
-console.log(countFlips(coinFlips(args.number)));
