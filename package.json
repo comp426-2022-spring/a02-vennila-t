@@ -13,6 +13,7 @@
   "author": "Vennila Thillaivanan",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "yargs": "^17.3.1"
   }
 }
