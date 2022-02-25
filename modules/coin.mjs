@@ -62,6 +62,9 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  if(array.length == 0){
+    return;
+  }
   var heads = 0;
   var tails = 0;
 
