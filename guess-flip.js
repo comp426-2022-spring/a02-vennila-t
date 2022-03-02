@@ -7,12 +7,11 @@ const args = require('yargs').argv;
 
 
 // Define allowed argument name 'call'.
-
-
+var
 switch (args) {
     case 'call':
       console.log(flipACoin(args.call));
       break;
     default:
-        console.log("Error: no input.");
+        "Error: no input.";
 }

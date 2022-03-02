@@ -99,7 +99,7 @@ function countFlips(array) {
 function flipACoin(call) {
   var flip = coinFlip();
   var result = "";
-  if(call = flip){
+  if(call.equals(flip)){
     result = "win";
   }
   else{
