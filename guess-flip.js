@@ -3,16 +3,11 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 const args = require('yargs')(process.argv.slice(2));
-const args = require('yargs').argv;
 
-
-// Define allowed argument name 'call'.
-
-// Call the coinFlip function and put the return into STDOUT
-
-// Call the coinFlip function and put the return into STDOUT
 switch (args) {
+  // Define allowed argument name 'call'.
     case 'call':
+      // Call the coinFlip function and put the return into STDOUT
       console.log(flipACoin(args.call));
       break;
     default:
