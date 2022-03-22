@@ -11,11 +11,6 @@ const args = require('yargs').argv;
 // Call the coinFlip function and put the return into STDOUT
 
 // Call the coinFlip function and put the return into STDOUT
-if(args.length == 0){
-    System.err.println("Error: no input.");
-}
-else{
-    console.log(flipACoin(args.call));
 switch (args) {
     case 'call':
       console.log(flipACoin(args.call));
