@@ -10,7 +10,8 @@ var result = new Array();
 
 const argv = require('yargs')
   .default('random', function randomValue() {
-    result = "Error: no input";
+    console.log("Error: no input");
+    console.log("Usage: node guess-flip --call=[heads|tails]");
   }).argv;
 
 if (argv.call == "heads" || argv.call == "tails") {
