@@ -105,7 +105,7 @@ function flipACoin(call) {
   else{
     result = "lose";
   }
-  return "call: "+call+", flip: "+flip+", result: "+result;
+  return "{ call: "+call+", flip: "+flip+", result: "+result+" }";
 }
 
 

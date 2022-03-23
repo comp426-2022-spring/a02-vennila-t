@@ -13,7 +13,7 @@ const argv = require('yargs')
     result = "Error: no input";
   }).argv;
 
-if (argv.call) {
+if (argv.call == "heads" || argv.call == "tails") {
   result = flipACoin(argv.call);
 }
 
