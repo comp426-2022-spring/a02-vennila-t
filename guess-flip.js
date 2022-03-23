@@ -7,16 +7,6 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 var result = new Array();
-// switch (args) {
-//   // Define allowed argument name 'call'.
-//     case 'call':
-//       // Call the coinFlip function and put the return into STDOUT
-//       result = flipACoin(args.call);
-//       break;
-//     default:
-//       result = ("Error: no input.");
-// }
-// console.log(result);
 
 const argv = require('yargs')
   .default('random', function randomValue() {
