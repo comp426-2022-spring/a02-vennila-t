@@ -4,17 +4,18 @@ import {countFlips} from "./modules/coin.mjs";
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
-const args = require('yargs').argv;
 
 // Define allowed argument name 'number'.
 // Call the coinFlip function and put the return into STDOUT
 var result = new Array();
-switch (args) {
-    case 'number':
-      result = coinFlips(args.number);
-      break;
-    default:
-        result = coinFlips(1);
+const argv = require('yargs')
+  .default('random', function randomValue() {
+    result = coinFlips(1);
+  }).argv;
+
+if (argv.number) {
+  result = coinFlips(argv.number);
 }
+
 console.log(result);
 console.log(countFlips(result));
